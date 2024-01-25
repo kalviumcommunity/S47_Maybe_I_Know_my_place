@@ -37,7 +37,7 @@ const express = require('express');
 const { startDatabase, stopDatabase, isConnected } = require('./db');
 const app = express();
 
-const port = process.env.PUBLIC_PORT ?? 8000;
+const port =  1000;
 
 app.get('/', (req, res) => {
   res.json({
@@ -60,7 +60,7 @@ if (require.main === module) {
   app.listen(port, async () => {
     await startDatabase();
 
-    console.log(`🚀 server running on PORT: ${port}`);
+    console.log(`🚀 server running on PORT`);
   });
 }
 
