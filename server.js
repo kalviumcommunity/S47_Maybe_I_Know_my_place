@@ -11,11 +11,11 @@ app.get('/' ,(req,res) =>{
     mongoose.connect(uri)
     .then(() =>{
         res.json({Connection:'Connected'})
-        // res.end()
+
     })
     .catch((err) =>{
         res.json({Connection:'Disconnected', err})
-        // res.end()
+
     })
 })
 
