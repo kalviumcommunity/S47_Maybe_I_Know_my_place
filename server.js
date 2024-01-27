@@ -1,9 +1,27 @@
-// const express = require('express')
-// const app = express()
-// const port = 7000
-// const mongoose = require('mongoose')
+const express = require('express')
+const app = express()
+const mongoose = require('mongoose')
+const port = 3000
 
-// const uri = 'mongodb+srv://Surya:sun@asapcluster.3osvgms.mongodb.net/?retryWrites=true&w=majority';
+const uri = 'mongodb+srv://Surya:sun@asapcluster.3osvgms.mongodb.net/?retryWrites=true&w=majority';
+
+
+
+app.get('/' ,(req,res) =>{
+    mongoose.connect(uri)
+    .then(() =>{
+        res.json({Connection:'Connected'})
+        // res.end()
+    })
+    .catch((err) =>{
+        res.json({Connection:'Disconnected', err})
+        // res.end()
+    })
+})
+
+app.listen(port, () => {
+    console.log(`server is up and runnig at port:`, port);
+})
 
 // mongoose.connect(uri)
 // .then(() => {
@@ -11,61 +29,13 @@
 //         res.json({connection: 'Connected'})
 //     })
 // })
-// .catch(() =>{
+// .catch((err) =>{
 //     app.get('/' ,(req , res) => {
-//         res.json({connection: 'Disconnected'})
+//         res.json({connection: 'Disconnected',err})
 //     })
 // })
 
-// // app.get('/',(req, res)=>{
-// //     console.log(req.url);
-// //     mongoose.connect(uri)
-// //     .then(() => {
-// //         res.send("connected to mongo successfully");
-// //     }).catch((error)=>{
-// //         res.send("got error while connecting", error);
-// //     })
-// // })
-
-
-// app.listen(port, () => {
-//     console.log("server is up and runnig at port:",port);
+// app.get('/' ,(req , res) =>{
+//   res.send('<h1>Hello</h1>')
 // })
 
-const express = require('express');
-
-const { startDatabase, stopDatabase, isConnected } = require('./db');
-const app = express();
-
-const port =  1000;
-
-app.get('/', (req, res) => {
-  res.json({
-    ServerDatabase: isConnected() ? 'connected' : 'disconnected'
-  })
-});
-
-
-process.on('SIGINT', async () => {
-  await stopDatabase();
-  process.exit(0);
-});
-
-process.on('SIGTERM', async () => {
-  await stopDatabase();
-  process.exit(0);
-});
-
-if (require.main === module) {
-  app.listen(port, async () => {
-    await startDatabase();
-
-    console.log(`🚀 server running on PORT`);
-  });
-}
-
-
-
-
-
-module.exports = app;
