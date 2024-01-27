@@ -23,19 +23,4 @@ app.listen(port, () => {
     console.log(`server is up and runnig at port:`, port);
 })
 
-// mongoose.connect(uri)
-// .then(() => {
-//     app.get('/', (req, res) => {
-//         res.json({connection: 'Connected'})
-//     })
-// })
-// .catch((err) =>{
-//     app.get('/' ,(req , res) => {
-//         res.json({connection: 'Disconnected',err})
-//     })
-// })
-
-// app.get('/' ,(req , res) =>{
-//   res.send('<h1>Hello</h1>')
-// })
 
