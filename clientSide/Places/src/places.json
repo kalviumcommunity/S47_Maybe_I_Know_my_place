@@ -1,0 +1,114 @@
+[
+    {
+      "id":1,
+      "Topic": "Taj Mahal",
+      "State": "Uttar Pradesh",
+      "City": "Agra",
+      "Year_of_build": 1484,
+      "Description": "This beautiful architecture was build during the time of Shah-Jahan, and is now counted in the wonders of world."
+    },
+    {
+      "id":2,
+      "Topic": "Hawa Mahal",
+      "State": "Rajasthan",
+      "City": "Jaipur",
+      "Year_of_build": 1789,
+      "Description": "This palace was built by Sawai Mann singh for the people of his family to look all of the thing happening around the town without getting noticed."
+    },
+    {
+      "id":3,
+      "Topic": "Jal Maha",
+      "State": "Rajasthan",
+      "City": "Jaipur",
+      "Year_of_build": 1500,
+      "Description": "The palace, built with local sandstone, is a three-storied building, with the third floor only existing on the eastern side of the palace."
+    },
+    {
+      "id":4,
+      "Topic": "Red fort",
+      "State": "Delhi",
+      "City": "Old Delhi",
+      "Year_of_build": 1639,
+      "Description": "The major architectural features are in mixed condition; the extensive water features are dry. Some buildings are in fairly good condition."
+    },
+    {
+      "id":5,
+      "Topic": "Jama Masjid",
+      "State": "Delhi",
+      "City": "Delhi",
+      "Year_of_build": 1656,
+      "Description": "The term 'Jama Masjid' is not unique to this mosque; since the 7th century, it has been used to denote the community mosque."
+    },
+    {
+      "id":6,
+      "Topic": "Qutub Minar",
+      "State": "Delhi",
+      "City": "Delhi",
+      "Year_of_build": 1190,
+      "Description": "In recent years, the Qutub Minar has been illuminated for special occasions involving international relations."
+    },
+    {
+      "id":7,
+      "Topic": "Swaminarayan - Akshardham",
+      "State": "Delhi",
+      "City": "East Delhi",
+      "Year_of_build": 2005,
+      "Description": "The main attraction of the Swaminarayan Akshardham complex is the Akshardham Mandir. It rises 43-metre (141 ft) high, spans 96-metre (316 ft) wide, and extends 109-metre (356 ft) long."
+    },
+    {
+      "id":8,
+      "Topic": "India Gate",
+      "State": "Delhi",
+      "City": "Delhi",
+      "Year_of_build": 1931,
+      "Description": "The India Gate was part of the work of the Imperial War Graves Commission (IWGC), which came into existence in December 1917 under the British rule."
+    },
+    {
+      "id":9,
+      "Topic": "Golden Tempel",
+      "State": "Punjab",
+      "City": "Amritsar",
+      "Year_of_build": 1577,
+      "Description": "The Golden Temple (also known as the Harmandir Sahib, or the Darbār Sahib, is a gurdwara located in the city of Amritsar."
+    },
+    {
+      "id":10,
+      "Topic": "Khajuraho",
+      "State": "Madhya Pradesh",
+      "City": "Chhatarpur",
+      "Year_of_build": 1002,
+      "Description": "The region was historically part of many kingdoms and empires. The earliest known power to have had Khajuraho in its territory were the Vatsa."
+    },
+    {
+      "id":11,
+      "Topic": "Pachmarhi",
+      "State": "Madhya Pradesh",
+      "City": "Narmadapuram",
+      "Year_of_build": 1857,
+      "Description": "Pachmarhi is a hill station in the Narmadapuram district of Madhya Pradesh state of central India. It has been the location of a cantonment."
+    },
+    {
+      "id":12,
+      "Topic": "Chitrakoot",
+      "State": "Madhya Pradesh",
+      "City": "Satna",
+      "Year_of_build": 1899,
+      "Description": "Chitrakoot is a pilgrimage centre and a nagar panchayat in the Satna district in the state of Madhya Pradesh, India. Connected to the Indian epic Ramayana."
+    },
+    {
+      "id":13,
+      "Topic": "Gir National Park",
+      "State": "Gujarat",
+      "City": "Amreli",
+      "Year_of_build": 2015,
+      "Description": "Gir National Park and Wildlife Sanctuary, also known as Sasan Gir, is a forest, national park, and wildlife sanctuary near Talala Gir in Gujarat, India. It is located 43 km (27 mi) north-east of Somnath, 65 km (40 mi) south-east of Junagadh and 60 km (37 mi) south-west of Amreli."
+    },
+    {
+      "id":14,
+      "Topic": "White Rann of Kutchchh",
+      "State": "Gujarat",
+      "City": "Ramsar Wetland",
+      "Year_of_build": 2002,
+      "Description": "The Great Rann of Kutch (or Rann of Kutch seasonal salt marsh) is a salt marsh in the Thar Desert in the Kutch District of Gujarat, India."
+    }
+  ]
