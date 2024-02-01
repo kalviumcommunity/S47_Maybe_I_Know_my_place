@@ -1,5 +1,6 @@
 import React from 'react'
 import '../comoponents/components.css'
+import { Link } from 'react-router-dom'
 
 
 const Home = () => {
@@ -11,8 +12,7 @@ const Home = () => {
                 <img src="https://www.revv.co.in/blogs/wp-content/uploads/2019/11/self-drive-car-rental-delhi-gurgaon-noida_revv-blog-1024x706.jpg" alt="img-1" className='one' />
                 <div className='user'>
                     <input type="text" placeholder='Enter your name' required className='inpu' />
-                    <input type="text" placeholder='Enter city name' required className='inpu' />
-                    <input type="submit" value={'start'} className='sub' />
+                    <Link to='/display'> <button className='submit'> Submit </button> </Link>
                 </div>
                 <img src="https://www.smartertravel.com/wp-content/uploads/2016/05/Jodhpur.jpg" alt="img-1" className='two' />
             </div>
