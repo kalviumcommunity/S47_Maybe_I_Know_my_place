@@ -5,7 +5,8 @@
       "State": "Uttar Pradesh",
       "City": "Agra",
       "Year_of_build": 1484,
-      "Description": "This beautiful architecture was build during the time of Shah-Jahan, and is now counted in the wonders of world."
+      "Description": "This beautiful architecture was build during the time of Shah-Jahan, and is now counted in the wonders of world.",
+      "img": "https://th.bing.com/th/id/R.3ca6df4793172742032163339bbb5785?rik=en6LE2ATbaGKMQ&riu=http%3a%2f%2fwallsdesk.com%2fwp-content%2fuploads%2f2016%2f05%2fTaj-Mahal-Indian-Monument-Ultra-HD-Desktop-Wallpaper.jpg&ehk=uuBcVzmv%2f4kfKdyx494nUsMsZCQG35t65YKcdDY9hYA%3d&risl=&pid=ImgRaw&r=0"
     },
     {
       "id":2,
@@ -13,7 +14,8 @@
       "State": "Rajasthan",
       "City": "Jaipur",
       "Year_of_build": 1789,
-      "Description": "This palace was built by Sawai Mann singh for the people of his family to look all of the thing happening around the town without getting noticed."
+      "Description": "This palace was built by Sawai Mann singh for the people of his family to look all of the thing happening around the town without getting noticed.",
+      "img": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/hawa-mahal-palace-palace-of-the-winds-byelikova-oksana.jpg"
     },
     {
       "id":3,
@@ -21,7 +23,8 @@
       "State": "Rajasthan",
       "City": "Jaipur",
       "Year_of_build": 1500,
-      "Description": "The palace, built with local sandstone, is a three-storied building, with the third floor only existing on the eastern side of the palace."
+      "Description": "The palace, built with local sandstone, is a three-storied building, with the third floor only existing on the eastern side of the palace.",
+      "img": "https://th.bing.com/th/id/R.5f7b6266d061a93aa1db74a4992ea66b?rik=PVnLbDBOWwujHQ&riu=http%3a%2f%2famazingindiablog.in%2fwp-content%2fuploads%2f2016%2f09%2fJal-Mahal-Night-View.jpg&ehk=FV2faf6p7VkfPW6VOpbl1Fp5OXUeQ2uyjplEsPkk3Uc%3d&risl=&pid=ImgRaw&r=0"
     },
     {
       "id":4,
@@ -29,7 +32,8 @@
       "State": "Delhi",
       "City": "Old Delhi",
       "Year_of_build": 1639,
-      "Description": "The major architectural features are in mixed condition; the extensive water features are dry. Some buildings are in fairly good condition."
+      "Description": "The major architectural features are in mixed condition; the extensive water features are dry. Some buildings are in fairly good condition.",
+      "img": "https://th.bing.com/th/id/R.ac328064e883a5eec2592671e5542fc6?rik=crspHJSlcAKq%2fw&riu=http%3a%2f%2ffivegoonanadventure.files.wordpress.com%2f2013%2f07%2fredfort-9960.jpg&ehk=Tu6LFO3WBFJhuFenXUSjwPUCVFVEGikNsQIpL%2fEZ3BE%3d&risl=&pid=ImgRaw&r=0"
     },
     {
       "id":5,
@@ -37,7 +41,8 @@
       "State": "Delhi",
       "City": "Delhi",
       "Year_of_build": 1656,
-      "Description": "The term 'Jama Masjid' is not unique to this mosque; since the 7th century, it has been used to denote the community mosque."
+      "Description": "The term 'Jama Masjid' is not unique to this mosque; since the 7th century, it has been used to denote the community mosque.",
+      "img": "https://th.bing.com/th/id/R.ec7e8af3f6a5dc8a988408fdcf92c706?rik=sxHRLA961kpW4Q&riu=http%3a%2f%2f1.bp.blogspot.com%2f-8LYttHncgxo%2fUd1R_xvYm5I%2fAAAAAAAAAUw%2fwrkb3-4p53o%2fs1600%2fJama_Masjid_Delhi.JPG&ehk=Nwi5kewUkKV9tJDfKfdPmaInnfE4a%2bjVetxVfROuRlI%3d&risl=&pid=ImgRaw&r=0"
     },
     {
       "id":6,
@@ -45,7 +50,8 @@
       "State": "Delhi",
       "City": "Delhi",
       "Year_of_build": 1190,
-      "Description": "In recent years, the Qutub Minar has been illuminated for special occasions involving international relations."
+      "Description": "In recent years, the Qutub Minar has been illuminated for special occasions involving international relations.",
+      "img": "https://th.bing.com/th/id/R.1a1b84b595eec50c919bdc9abe305b52?rik=fViffTIKw8XfFw&riu=http%3a%2f%2f1.bp.blogspot.com%2f-0S6Fzp1ZyOI%2fTnBcRx0jmdI%2fAAAAAAAAAwA%2fEYHUVPiPdwU%2fs1600%2fQutub%2bMinar-%2b%2b1.JPG&ehk=ZrN7nFk4MdTDJIOalGjqn8Rr%2fk6OueXY%2fykpDD7L2jg%3d&risl=&pid=ImgRaw&r=0"
     },
     {
       "id":7,
@@ -53,7 +59,8 @@
       "State": "Delhi",
       "City": "East Delhi",
       "Year_of_build": 2005,
-      "Description": "The main attraction of the Swaminarayan Akshardham complex is the Akshardham Mandir. It rises 43-metre (141 ft) high, spans 96-metre (316 ft) wide, and extends 109-metre (356 ft) long."
+      "Description": "The main attraction of the Swaminarayan Akshardham complex is the Akshardham Mandir. It rises 43-metre (141 ft) high, spans 96-metre (316 ft) wide, and extends 109-metre (356 ft) long.",
+      "img": "https://akshardham.com/newdelhi/wp-content/uploads/2015/05/akshardham_monument_evening-106.jpg"
     },
     {
       "id":8,
@@ -61,7 +68,8 @@
       "State": "Delhi",
       "City": "Delhi",
       "Year_of_build": 1931,
-      "Description": "The India Gate was part of the work of the Imperial War Graves Commission (IWGC), which came into existence in December 1917 under the British rule."
+      "Description": "The India Gate was part of the work of the Imperial War Graves Commission (IWGC), which came into existence in December 1917 under the British rule.",
+      "img": "https://www.holidify.com/images/cmsuploads/compressed/5621259188_e74d63cb05_b_20180302140149.jpg"
     },
     {
       "id":9,
@@ -69,7 +77,8 @@
       "State": "Punjab",
       "City": "Amritsar",
       "Year_of_build": 1577,
-      "Description": "The Golden Temple (also known as the Harmandir Sahib, or the Darbār Sahib, is a gurdwara located in the city of Amritsar."
+      "Description": "The Golden Temple (also known as the Harmandir Sahib, or the Darbār Sahib, is a gurdwara located in the city of Amritsar.",
+      "img": "https://www.whyweseek.com/wp-content/uploads/2018/03/Golden-Temple-at-Night-Amritsar-1024x683.jpg"
     },
     {
       "id":10,
@@ -77,7 +86,8 @@
       "State": "Madhya Pradesh",
       "City": "Chhatarpur",
       "Year_of_build": 1002,
-      "Description": "The region was historically part of many kingdoms and empires. The earliest known power to have had Khajuraho in its territory were the Vatsa."
+      "Description": "The region was historically part of many kingdoms and empires. The earliest known power to have had Khajuraho in its territory were the Vatsa.",
+      "img": "https://cdn.audleytravel.com/-/-/79/208794-temples-at-khajuraho-india.jpg"
     },
     {
       "id":11,
@@ -85,7 +95,8 @@
       "State": "Madhya Pradesh",
       "City": "Narmadapuram",
       "Year_of_build": 1857,
-      "Description": "Pachmarhi is a hill station in the Narmadapuram district of Madhya Pradesh state of central India. It has been the location of a cantonment."
+      "Description": "Pachmarhi is a hill station in the Narmadapuram district of Madhya Pradesh state of central India. It has been the location of a cantonment.",
+      "img": "https://i.ytimg.com/vi/R269dULBJuY/maxresdefault.jpg"
     },
     {
       "id":12,
@@ -93,7 +104,8 @@
       "State": "Madhya Pradesh",
       "City": "Satna",
       "Year_of_build": 1899,
-      "Description": "Chitrakoot is a pilgrimage centre and a nagar panchayat in the Satna district in the state of Madhya Pradesh, India. Connected to the Indian epic Ramayana."
+      "Description": "Chitrakoot is a pilgrimage centre and a nagar panchayat in the Satna district in the state of Madhya Pradesh, India. Connected to the Indian epic Ramayana.",
+      "img": "https://th.bing.com/th/id/OIP.kgUTFecPK9tjgJitJ6GuuQHaE9?rs=1&pid=ImgDetMain"
     },
     {
       "id":13,
@@ -101,7 +113,8 @@
       "State": "Gujarat",
       "City": "Amreli",
       "Year_of_build": 2015,
-      "Description": "Gir National Park and Wildlife Sanctuary, also known as Sasan Gir, is a forest, national park, and wildlife sanctuary near Talala Gir in Gujarat, India. It is located 43 km (27 mi) north-east of Somnath, 65 km (40 mi) south-east of Junagadh and 60 km (37 mi) south-west of Amreli."
+      "Description": "Gir National Park and Wildlife Sanctuary, also known as Sasan Gir, is a forest, national park, and wildlife sanctuary near Talala Gir in Gujarat, India. It is located 43 km (27 mi) north-east of Somnath, 65 km (40 mi) south-east of Junagadh and 60 km (37 mi) south-west of Amreli.",
+      "img": " https://vagatrip.com/storage/blogs/April2023/Feature-image-Gir-National-Park.jpg "
     },
     {
       "id":14,
@@ -109,6 +122,7 @@
       "State": "Gujarat",
       "City": "Ramsar Wetland",
       "Year_of_build": 2002,
-      "Description": "The Great Rann of Kutch (or Rann of Kutch seasonal salt marsh) is a salt marsh in the Thar Desert in the Kutch District of Gujarat, India."
+      "Description": "The Great Rann of Kutch (or Rann of Kutch seasonal salt marsh) is a salt marsh in the Thar Desert in the Kutch District of Gujarat, India.",
+      "img": "https://bhagyashritravels.com/wp-content/uploads/2019/10/White-Rann-of-Kutch-Feature.jpg"
     }
   ]
