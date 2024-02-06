@@ -63,16 +63,58 @@ img {
     margin-right: 5vh;
 }
 
-p{
+p {
     margin-bottom: 5px;
     font-size: 2.5vh;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: space-between;
 }
 
-.aii{
+.aii {
     margin-left: 0;
+}
+
+.table,
+td {
+    border: 1px solid black;
+    margin: auto auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+}
+
+th,
+td {
+    border-bottom: 1px solid black;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.cont{
+    padding: 1vh 2vh;
+    font-size: 3vh;
+    text-align: center;
+}
+.cont:hover{
+    background-color: black;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: white;
 }
