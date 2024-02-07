@@ -2,17 +2,30 @@ import React, { useEffect, useState } from 'react'
 import '../comoponents/components.css';
 import axios from 'axios'
 import { Link } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 
 const Users = () => {
+    // const navigate = useNavigate()
+
+    const handelDelete = (id) => {
+        console.log("Delete Button Clicked");
+        axios.delete('http://localhost:9000/deleteUser/' + id)
+            .then(res => {
+                console.log(res);
+                window.location.reload();
+            })
+            .catch(err => console.log(err));
+    }
+
     const [user, setUser] = useState([])
     useEffect(() => {
-        async function getApi(){
-            try{
+        async function getApi() {
+            try {
                 const res = await axios.get('http://localhost:3000')
                 console.log(res)
                 setUser(res.data)
-            }catch(err){
+            } catch (err) {
                 console.log(err)
             }
         }
@@ -39,10 +52,10 @@ const Users = () => {
                                     <td><h1> {item.name} </h1></td>,
                                     <td><h1> {item.email} </h1></td>,
                                     <td><h1> {item.age} </h1></td>,
-                                    {/* <td>
+                                    <td>
                                         <Link to={`/update/${item._id}`}> <button>Update</button> </Link>
                                         <button onClick={() => handelDelete(item._id)}> Delete </button>
-                                    </td> */}
+                                    </td>
                                 </tr>
                             )
                         })

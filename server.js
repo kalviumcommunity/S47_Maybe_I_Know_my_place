@@ -80,6 +80,7 @@ app.delete('/deleteUser/:id', (req,res) =>{
     .catch(err => console.log(err))
 })
 
+
 const uri = 'mongodb+srv://thesuryasingh2003:sun@cluster0.cvfs8ar.mongodb.net/?retryWrites=true&w=majority';
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 client.connect()

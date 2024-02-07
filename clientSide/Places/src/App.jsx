@@ -4,6 +4,7 @@ import './App.css';
 import Home from "./comoponents/Home"
 import Display from './comoponents/Display';
 import Users from './comoponents/Users';
+import Update from './comoponents/Update';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Route path='/' element={<Home />} />
       <Route path='/display' element={<Display />} />
       <Route path='/users' element={<Users />} />
+      <Route path='/update/:id' element= {<Update/>} />
     </Routes>
   );
 }
