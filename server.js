@@ -24,6 +24,8 @@ const app = express();
 const port = 3000;
 const mongoose = require('mongoose');
 const userModel = require('./Models/User');
+const Joi = require("joi")
+const { validateSignup } = require('./validator')
 app.use(cors())
 
 mongoose.connect("mongodb+srv://thesuryasingh2003:surya@cluster0.qwpokc1.mongodb.net/?retryWrites=true&w=majority", {
@@ -68,9 +70,14 @@ app.put('/updateUser/:id', (req, res) => {
 
 
 app.post("/createUser", (req, res) => {
-    userModel.create(req.body)
-        .then(users => res.json(users))
-        .catch(err => res.json(err));
+  const { error, value } = validateSignup(req.body)
+  if (error) {
+      console.log(error.details);
+      return res.status(400).json({ error: error.details});
+  }
+  userModel.create(req.body)
+      .then(users => res.json(users))
+      .catch(err => res.status(500).json({ error: "Internal server error" }));
 });
 
 app.delete('/deleteUser/:id', (req,res) =>{
