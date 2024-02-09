@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react'
 import '../comoponents/components.css';
 import axios from 'axios'
 import { Link } from 'react-router-dom';
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 const Users = () => {
-    // const navigate = useNavigate()
+    const navigate = useNavigate()
 
     const handelDelete = (id) => {
         console.log("Delete Button Clicked");
@@ -31,6 +31,16 @@ const Users = () => {
         }
         getApi()
     }, [])
+
+    const handelLogOut = () => {
+        // Clear cookies related to your application
+        document.cookie = 'name=; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+        document.cookie = 'email=; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+        document.cookie = 'age=; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+    
+        navigate('/');
+    }
+    
 
 
     return (
@@ -63,6 +73,7 @@ const Users = () => {
                 </tbody>
             </table>
             <button className='cont'> <Link to="/display"> Continue </Link> </button>
+            <button className='cont' onClick={handelLogOut}> LogOut </button>
         </div>
     )
 }
