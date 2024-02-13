@@ -3,6 +3,7 @@ import '../comoponents/components.css';
 import axios from 'axios'
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 const Users = () => {
@@ -86,9 +87,9 @@ const Users = () => {
                         user.map((item) => {
                             return (
                                 <tr>
-                                    <td><h1> {item.name} </h1></td>,
-                                    <td><h1> {item.email} </h1></td>,
-                                    <td><h1> {item.age} </h1></td>,
+                                    <td><h1> {item.name} </h1></td>
+                                    <td><h1> {item.email} </h1></td>
+                                    <td><h1> {item.age} </h1></td>
                                     <td>
                                         <Link to={`/update/${item._id}`}> <button>Update</button> </Link>
                                         <button onClick={() => handelDelete(item._id)}> Delete </button>

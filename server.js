@@ -79,7 +79,7 @@ app.post("/createUser", (req, res) => {
   }
   const secret = "Surya";
   const token = jwt.sign({ data: req.body }, secret, { expiresIn: '5min' });
-  console.log(token);
+  // console.log(token);
   
   userModel.create(req.body)
     .then(user => {
