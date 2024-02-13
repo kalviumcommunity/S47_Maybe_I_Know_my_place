@@ -13,7 +13,7 @@ const Update = () => {
   const navigate = useNavigate()
 
   useEffect(() => {
-    axios.get(`http://localhost:9000/getUser/${id}`)
+    axios.get(`http://localhost:7000/getUser/${id}`)
       .then(result => {
         console.log(result)
         setName(result.data.name)

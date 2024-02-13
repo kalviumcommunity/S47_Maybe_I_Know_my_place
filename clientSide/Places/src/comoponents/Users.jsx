@@ -8,40 +8,67 @@ import { useNavigate } from 'react-router-dom';
 const Users = () => {
     const navigate = useNavigate()
 
-    const handelDelete = (id) => {
+    // const handelDelete = (id) => {
+    //     console.log("Delete Button Clicked");
+    //     axios.delete('http://localhost:7000/deleteUser/' + id)
+    //         .then(res => {
+    //             console.log(res);
+    //             window.location.reload();
+    //         })
+    //         .catch(err => console.log(err));
+    // }
+
+    const handelDelete = async (id) => {
         console.log("Delete Button Clicked");
-        axios.delete('http://localhost:9000/deleteUser/' + id)
-            .then(res => {
-                console.log(res);
-                window.location.reload();
-            })
-            .catch(err => console.log(err));
+        try {
+            await axios.delete('http://localhost:7000/deleteUser/' + id);
+            setUser(prevUsers => prevUsers.filter(user => user._id !== id));
+        } catch (err) {
+            console.log(err);
+        }
     }
 
-    const [user, setUser] = useState([])
+    const [user, setUser] = useState([]);
+    const [token, setToken] = useState('');
+
     useEffect(() => {
         async function getApi() {
             try {
-                const res = await axios.get('http://localhost:3000')
-                console.log(res)
-                setUser(res.data)
+                const res = await axios.get('http://localhost:3000');
+                console.log(res);
+                setUser(res.data);
             } catch (err) {
-                console.log(err)
+                console.log(err);
             }
         }
-        getApi()
-    }, [])
+        getApi();
+
+        const token = getCookie('token');
+        if (token) {
+            setToken(token);
+        }
+    }, []);
+
+    const getCookie = (name) => {
+        const cookies = document.cookie.split(';');
+        for (let cookie of cookies) {
+            const [cookieName, cookieValue] = cookie.split('=');
+            if (cookieName.trim() === name) {
+                return cookieValue;
+            }
+        }
+        return null;
+    };
 
     const handelLogOut = () => {
         // Clear cookies related to your application
         document.cookie = 'name=; expires=Thu, 01 Jan 1970 00:00:00 GMT';
         document.cookie = 'email=; expires=Thu, 01 Jan 1970 00:00:00 GMT';
         document.cookie = 'age=; expires=Thu, 01 Jan 1970 00:00:00 GMT';
-    
+        document.cookie = 'token=; expires=Thu, 01 Jan 1970 00:00:00 GMT'; 
+
         navigate('/');
     }
-    
-
 
     return (
         <div>
@@ -75,7 +102,6 @@ const Users = () => {
             <button className='cont'> <Link to="/display"> Continue </Link> </button>
             <button className='cont' onClick={handelLogOut}> LogOut </button>
         </div>
-    )
+    );
 }
-
 export default Users
