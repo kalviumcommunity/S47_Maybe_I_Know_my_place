@@ -26,17 +26,18 @@ const mongoose = require('mongoose');
 const userModel = require('./Models/User');
 const Joi = require("joi")
 const { validateSignup } = require('./validator')
+const jwt = require('jsonwebtoken')
 app.use(cors())
 
 mongoose.connect("mongodb+srv://thesuryasingh2003:surya@cluster0.qwpokc1.mongodb.net/?retryWrites=true&w=majority", {
-    dbName: "Crud"
+  dbName: "Crud"
 })
-    .then(() => {
-        console.log('Connected to MongoDB');
-    })
-    .catch((err) => {
-        console.log("Unable to connect to MongoDB:", err);
-    });
+  .then(() => {
+    console.log('Connected to MongoDB');
+  })
+  .catch((err) => {
+    console.log("Unable to connect to MongoDB:", err);
+  });
 
 // Enable CORS
 app.use(cors());
@@ -44,52 +45,60 @@ app.use(express.json());
 
 // Create user route
 app.get('/', (req, res) => {
-    userModel.find({})
-        .then(users => res.json(users))
-        .catch(err => console.log(err))
+  userModel.find({})
+    .then(users => res.json(users))
+    .catch(err => console.log(err))
 })
 
 
 app.get('/getUser/:id', (req, res) => {
-    const id = req.params.id
-    userModel.findById({ _id: id })
-        .then(users => res.json(users))
-        .catch(err => console.log(err))
+  const id = req.params.id
+  userModel.findById({ _id: id })
+    .then(users => res.json(users))
+    .catch(err => console.log(err))
 })
 
 app.put('/updateUser/:id', (req, res) => {
-    const id = req.params.id
-    userModel.findByIdAndUpdate({ _id: id }, {
-        name: req.body.name,
-        email: req.body.email,
-        age: req.body.age
-    })
-        .then(users => res.json(users))
-        .catch(err => console.log(err))
+  const id = req.params.id
+  userModel.findByIdAndUpdate({ _id: id }, {
+    name: req.body.name,
+    email: req.body.email,
+    age: req.body.age
+  })
+    .then(users => res.json(users))
+    .catch(err => console.log(err))
 })
+
 
 
 app.post("/createUser", (req, res) => {
   const { error, value } = validateSignup(req.body)
   if (error) {
-      console.log(error.details);
-      return res.status(400).json({ error: error.details});
+    console.log(error.details);
+    return res.status(400).json({ error: error.details });
   }
+  const secret = "Surya";
+  const token = jwt.sign({ data: req.body }, secret, { expiresIn: '5min' });
+  console.log(token);
+  
   userModel.create(req.body)
-      .then(users => res.json(users))
-      .catch(err => res.status(500).json({ error: "Internal server error" }));
+    .then(user => {
+      res.json({ user, token }); 
+    })
+    .catch(err => res.status(500).json({ error: "Internal server error" }));
 });
 
-app.delete('/deleteUser/:id', (req,res) =>{
-    const id = req.params.id
-    userModel.findByIdAndDelete({_id: id})
+
+app.delete('/deleteUser/:id', (req, res) => {
+  const id = req.params.id
+  userModel.findByIdAndDelete({ _id: id })
     .then(res => res.json(res))
     .catch(err => console.log(err))
 })
 
 
 const uri = 'mongodb+srv://thesuryasingh2003:sun@cluster0.cvfs8ar.mongodb.net/?retryWrites=true&w=majority';
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+const client = new MongoClient(uri);
 client.connect()
   .then(() => {
     console.log('Connected to MongoDB Atlas');
